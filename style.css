@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    background-color: #014995;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #fcb328;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+h2 a:link,
+h2 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: lightblue;  
+}
+
+p, p1, p4 {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0; 
+}
+
+ul, dl {
+    color: white;
+    margin-left: 20px;
+}
+
+ul li, dl dd {
+    margin-bottom: 10px;
+}
+
+/* Form Inputs */
+form {
+    margin: 10px 0;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background-color: #fcb328;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffdd4d;
+}
+
+/* Flexbox Layout with boxed columns */
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    background-color: #033a80; /* slightly darker blue for the box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Image styling */
+#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .left-column,
+.dark-mode .right-column {
+    background-color: #1e1e1e;
+}
+
+.dark-mode a {
+    color: #9fd3ff;
+}
+
+/* Buttons styling */
+button,
+form input[type="submit"] {
+    background-color: #fcb328;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+form input[type="submit"]:hover {
+    background-color: #ffdd4d;
+}
+
+/* Job title */
+#jobTitle {
+    color: #fcb328;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
